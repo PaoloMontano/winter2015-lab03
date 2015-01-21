@@ -31,6 +31,16 @@ class Welcome extends Application {
         $this->render();
     }
 
+    /**
+     *  Returns Elayne Boosler's quote.
+     */
+    function shucks() {
+      $this->data['pagebody'] = 'justone';
+      $source = $this->quotes->get(2);
+      $this->data = array_merge($this->data, $source);
+      $this->render();
+    }
+
 }
 
 /* End of file Welcome.php */
