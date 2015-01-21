@@ -39,6 +39,7 @@
 */
 
 $route['default_controller'] = "welcome";
+$route['last'] = "last/Last";
 $route['404_override'] = '';
 
 
