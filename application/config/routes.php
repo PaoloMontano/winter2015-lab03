@@ -41,8 +41,9 @@
 $route['default_controller'] = "welcome";
 $route['last'] = "last/Last";
 $route['404_override'] = '';
-$route['sleep'] = "First/zzz";
+$route['sleep'] = "first/zzz";
 $route['lock/(:any)/(:any)'] = "welcome/shucks";
+$route['show/(:num)'] = "first/gimmie/$1";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

@@ -34,6 +34,22 @@ class First extends Application {
         $this->data = array_merge($this->data, $source);
         $this->render();
     }
+
+    /**
+     * Grabs a quote by the provided ID.
+     *
+     * @param int ID for specific quote requested.
+     */
+    function gimmie($id) {
+      if ($source = $this->quotes->get($id)) {
+        $this->data['pagebody'] = 'justone';
+        $this->data = array_merge($this->data, $source);
+        $this->render();
+      }
+      else {
+        echo "Error";
+      }
+    }
 }
 
 /* End of file First.php */
