@@ -25,6 +25,9 @@ class First extends Application {
         $this->render();
     }
 
+    /**
+     * Returns Bob Monkhouse's quote.
+     */
     function zzz() {
         $this->data['pagebody'] = 'justone';
         $source = $this->quotes->first();
