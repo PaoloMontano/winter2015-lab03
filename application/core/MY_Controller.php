@@ -39,6 +39,14 @@ class Application extends CI_Controller {
         $this->parser->parse('_template', $this->data);
     }
 
+    /**
+     * Returns the pagebody type for the content.
+     * @return string pagebody type.
+     */
+    function get_pagebody() {
+      return $this->data['pagebody'];
+    }
+
 }
 
 /* End of file MY_Controller.php */
